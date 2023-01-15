@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: app-dev
+    image: app-dev
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - '3001:3001'
